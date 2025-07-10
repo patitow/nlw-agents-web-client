@@ -10,7 +10,7 @@ export function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route element={<CreateRoom />} index />
+          <Route element={<CreateRoom />} path="/" />
           <Route element={<Room />} path="/room/:id" />
         </Routes>
       </BrowserRouter>
